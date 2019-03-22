@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Text;
+using System.IO;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -6,7 +9,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World111!1");
+           
+            
+            List<string> a = new List<string>();
+            a.Add("A");
+            a.Add("B");
+            for (int i= 0;i< a.Count;i++)
+            {
+                string str = a[i];
+                Console.WriteLine(str);
+            }
+
             Console.ReadKey();
         }
     }
